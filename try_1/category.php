@@ -20,6 +20,11 @@ get_header(); ?>
 			<div id="content" class="content" role="main">
 
 <?php // Эту функцию лучше в function.php
+
+/*Выводит список дочерних подкатегорий с глубиной 1
+Аргументы: $arg - подкатегории кого выводить
+$cur_cat - тукущая категория, чтобы придать ей активный класс*/
+
 function child_term($arg, $cur_cat){
 	$kat = $arg;
 
